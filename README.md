@@ -1,73 +1,44 @@
-# GEN AI resume-builder-and-cover-letter-generator
+# FALCON AI Resume & Cover Letter Generator
  ![Resume Refiner](resumepolisher.png)
  ![Cover Letter Builder](cover_letter.png)
- AI-Powered Resume and Cover Letter Generator
+ 
+## Transform Your Job Applications with AI
 
-Transform Your Job Applications with AI
-
-This project utilizes Generative AI and foundation models to help users generate polished, domain-specific resumes and cover letters with minimal effort. Whether you are applying for a technical, creative, or managerial role, this AI-powered tool personalizes career documents, ensuring they stand out to recruiters.
+This project uses Foundation pretrained LLM model, powered by Falcon, to help users generate professional and personalized resumes and cover letters with minimal effort. Whether you’re applying for a technical, creative, or managerial role, this AI-powered tool streamlines the process and ensures your application materials stand out.
 
 ## Features
 
-Domain-Specific Customization: Tailor resumes and cover letters to specific industries or job roles.
-
-Conversational Cover Letter Creation: Generate personalized cover letters based on simple prompts or job descriptions.
-
-User-Friendly Interface: Easily fill in sections like work experience and skills, and let AI generate cohesive career documents.
-
-Flexible Templates: Choose from a variety of resume and cover letter formats to best fit your industry or target audience.
+Industry-Specific Customization: Tailor your resume and cover letter to match specific industries and roles for maximum relevance.
+Conversational Cover Letter Generator: Create personalized cover letters based on job descriptions and your personal experience.
+Intuitive Interface: Easily input key information like work experience and skills, and let AI generate cohesive career documents.
+Flexible Templates: Choose from various formats and designs suited to different industries or job positions.
 
 ## How It Works
 
-This tool leverages OpenAI's GPT-3 and advanced prompt engineering techniques to produce highly customized career documents:
-
-Input Details: The user provides basic information like job title, key skills, and work experience.
-
-Custom Prompts: Based on this input, pre-trained prompts are used to generate draft resumes and cover letters, optimized for relevance and readability.
-
-Refinement: Users can refine or customize sections, allowing for greater personalization.
-
-
+Input Details: Users provide basic information like job title, company name, relevant experience, and key skills.
+AI-Powered Generation: The system leverages the Falcon model to generate custom resumes and cover letters that fit the input provided.
+Customization: Users can refine the generated output for further personalization.
+Export: Professionally formatted resumes and cover letters, ready to be submitted to job applications.
 
 ## Technology Stack
+Falcon (via Hugging Face): The core model for natural language generation, used to create tailored cover letters and resumes.
+AutoTokenizer (Hugging Face): Processes input data and converts it into tokens that the Falcon model can understand.
+PyTorch: Powers the machine learning framework used for model loading and text generation.
+Gradio: Provides an interactive user interface to input data and view the AI-generated results.
+Docker: Containerizes the application for easy deployment and environment consistency.
+Model Details
+Model: Falcon, a, open-source language model from TII, optimized for generating human-like text.
+Text Generation: The Falcon model generates coherent cover letters using causal language modeling, ensuring that each word and phrase is contextually relevant to the user’s inputs.
+Custom Parameters: The model uses parameters such as temperature (set to 0.7 for balanced creativity) and max_length to generate optimal cover letter outputs.
+Results
+Efficient: Reduces time spent on creating resumes and cover letters by automating the generation process.
+High-Quality Outputs: Generated content is contextually relevant, personalized, and professional.
+User-Friendly: The tool’s intuitive interface allows users of all technical levels to easily generate and refine documents.
 
-Foundation Models: Built on OpenAI's GPT-3 for powerful, natural language generation.
+##Future Enhancements
 
-Hugging Face Transformers: Used to experiment with model training and fine-tuning.
-
-PyTorch: For experimenting with foundation model adjustments.
-
-Flask/Streamlit: A simple web interface that allows users to interact with the model seamlessly.
-
-LangChain: Employed to structure prompt engineering and chain reasoning for personalized responses.
-
-Docker: To containerize the application for easy deployment and testing.
-
-
-## Model Training Details
-
-Data Sources: The foundational model was fine-tuned on a dataset containing a mix of generic resumes, industry-specific samples, and cover letters from various job sectors.
-
-Prompt Engineering: Techniques such as zero-shot and few-shot prompting were used to guide the model towards high-quality output.
-
-Fine-Tuning: Leveraged Hugging Face Transformers to fine-tune GPT-3 specifically for career-oriented language, making it capable of adapting to various roles like engineering, marketing, and management.
-
-Evaluation and Results
-
-Precision: High accuracy in extracting key elements from user input.
-
-User Feedback: During testing, the model was found to reduce time spent on resume building by up to 70%.
-
-Examples: Check out the example_output/ folder for sample generated resumes and cover letters.
-
-## Future Enhancements
-
-Integration with Job Portals: Automate tailoring of documents based on specific job postings from platforms like LinkedIn.
-
-Multi-Language Support: Extend the functionality to support non-English resumes.
-
-Reinforcement Learning from User Feedback (RLHF): Implement RLHF to continuously improve generated content.
-
-## Contributing
-
-Contributions are always welcome! Feel free to create issues, submit pull requests, or suggest new features.
+Job Portal Integration: Automatically tailor resumes and cover letters based on job descriptions from platforms like LinkedIn.
+Multi-Language Support: Extend the tool’s capabilities to generate resumes and cover letters in multiple languages.
+Reinforcement Learning: Use user feedback to continuously improve the quality of generated outputs.
+Contributing
+We welcome contributions! Feel free to open issues, submit pull requests, or suggest new features.
